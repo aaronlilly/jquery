@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#inPut').click(function() {
+    $('#outPut').html('');
+
+    var FLname =  $('#searchField').val();
+
+    $('#outPut').append(FLname);
+    
+  });
+ 
+});   
+</script>
+</head>
+<body>
+  
+    
+<br>
+      <input type='text' id='searchField' placeholder="append">
+        
+          <button id='inPut'>Append</button>
+
+<br>
+<div id='outPut'>
+  </div>
+
+   </body>
+</html>
