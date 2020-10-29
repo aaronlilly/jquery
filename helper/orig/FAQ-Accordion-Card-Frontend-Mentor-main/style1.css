@@ -1,0 +1,161 @@
+.attribution{
+	font-size:11px;
+	text-align:center;
+	padding:20px;
+	background-color:hsla(0,0%,100%,.3);
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+.attribution a{
+	color:#3e52a3
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: linear-gradient(180deg,#af67e9,#6565e7);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Kumbh Sans,sans-serif;
+}
+
+.main {
+    background-color: #fff;
+    color: hsl(237, 12%, 33%);
+    width: 60%;
+    height: 70%;
+    border-radius: 30px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.square {
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    top: 40%;
+}
+.square img {
+    position: relative;
+    width: 50%;
+    left: -24.5%;
+}
+
+.main .left {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .left .desktopBG img {
+    width: 200%;
+    max-width: 200%;
+    position: absolute;
+    right: 0;
+    bottom: -30%;
+}
+
+.main .left .desktopImage img {
+    width: 120%;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+.main .mobImage img, .main .mobBG img {
+    display: none;
+}
+
+.main .faq {
+    width: 50%;
+}
+
+.main .faq .faqBox {
+    margin: 0 auto;
+    padding: 5%;
+    width: 70%;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .faq .faqBox h1{
+    margin-bottom: 5%;
+    font-size: 24px;
+}
+
+.main .faq .faqBox .qContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+.main .faq .faqBox .qContainer:hover {
+    color: #f47c57;
+    cursor: pointer;
+}
+
+.main .faq .faqBox .question {
+    font-size: 12px;
+    margin: 5% 0;
+}
+
+.main .faq .qContainer .question {
+    flex: 1 1 auto;
+}
+
+.main .faq .qContainer img {
+    flex: 0 0 1%;
+    height: 5%;
+    margin-right: 5%;
+    align-self: center;
+    
+}
+
+.main .faq .faqBox .answer {
+    display: none;
+}
+
+
+
+.visible {
+    display: block;
+    color:#797986;
+    animation: drop .8s ease;
+}
+@keyframes drop{
+	0%{
+		transform:translateY(-20%)
+	}
+	to{
+		transform:translateY(0)
+	}
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
