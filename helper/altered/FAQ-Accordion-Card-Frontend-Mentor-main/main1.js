@@ -1,5 +1,15 @@
 const questions = document.querySelectorAll("qna");
 
+$(document).ready(function() {
+  $('.qna').click(function() {
+    
+    alert("hey");
+  
+    
+  });
+ 
+});   
+
 questions.forEach((q) => {
     const icon = q.querySelector(".icon");
     const title = q.querySelector("question");
